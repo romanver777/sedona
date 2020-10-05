@@ -1,0 +1,58 @@
+main.main-form
+    section.review
+        header.review-header
+            h3.review-header__name Оставьте свой отзыв
+            h4.review-header__desc Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+    form.form
+        section.form-introduce
+            h3.form-introduce__name Представьтесь:
+            .form__list
+                .form__item
+                    .form__fname Имя:
+                    input(placeholder='Петр').form-input.form-input__fname
+                .form__item
+                    .form__lname Фамилия:
+                    input(placeholder='Иванов').form-input.form-input__lname
+                .form__item
+                    .form__mname Отчество:
+                    input(placeholder='Александрович').form-input.form-input__mname
+        section.form-contact
+            h3.form-contact__name Контактная информация:
+            .form__list
+                .form__item
+                    .form__tel Контактный телефон:
+                    input(placeholder='Введите телефон').form-input.form-input__tel
+                .form__item
+                    .form__email Электронная почта:
+                    input(placeholder='Введите e-mail').form-input.form-input__email
+        section.form-impression
+            h3.form-impression__name Представьтесь:
+                .form__list
+                    .form__item
+                        input(type='radio').form-input__radio
+                        .form__name Скорее положительное
+                    .form__item
+                        input(type='radio').form-input__radio
+                        .form__name Скорее отрицательное
+                    .form__item
+                        input(type='radio').form-input__radio
+                        .form__name Затрудняюсь ответить
+        section.form-landmark
+            h3.form-landmark__name Представьтесь:
+                .form__list
+                    .form__item
+                        input(type='checkbox').form-input__checkbox
+                        .form__name  Мост Дьявола
+                    .form__item
+                        input(type='checkbox').form-input__checkbox
+                        .form__name Гора-Колокол
+                    .form__item
+                        input(type='checkbox').form-input__checkbox
+                        .form__name Слайд-парк
+                    .form__item
+                        input(type='checkbox').form-input__checkbox
+                        .form__name Красные скалы
+        section.emotions
+            h3.form-emotions__name Опишите свои эмоции
+            textarea(placeholder='Опишите подробно все свои восторги')
+            button.emotions__btn Отправить отзыв
