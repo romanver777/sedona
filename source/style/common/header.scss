@@ -1,0 +1,56 @@
+.header__wrap{
+  position: relative;
+}
+
+.arrow-down{
+  position: absolute;
+  width: 110%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-menu{
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logo{
+  width: 102px;
+  height: 83px;
+}
+
+.menu__btn_gamburger{
+  background: url(../img/icon-menu.svg) center no-repeat;
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.header{
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(-webkit-min-device-pixel-ratio: 1){
+    background: url(../img/back-mobile.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  @media(-webkit-min-device-pixel-ratio: 2){
+    background: url(../img/back-mobile@2x.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+
+.text-index{
+  background: url(../img/text-index.svg) center no-repeat;
+  width: 282px;
+  height: 214px;
+}
