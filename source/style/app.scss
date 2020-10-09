@@ -1,6 +1,13 @@
 body {
   margin: 0;
+
+  @media(max-width: 768px) {
+    position: relative;
+    transition: 1s ease;
+    top: -220px;
+  }
 }
 
+@import 'common/fonts';
 @import 'common/variables';
 @import 'common/mobile-menu';

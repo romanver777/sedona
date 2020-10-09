@@ -1,5 +1,9 @@
 .mobile-menu{
   position: relative;
+
+  @media(min-width: 768px){
+    display: none;
+  }
 }
 
 .mobile-menu__btn{
@@ -11,10 +15,15 @@
   position: absolute;
   right: 20px;
   background-image: url(../img/icon-cross.png);
+  background-repeat: no-repeat;
+}
+.mobile-menu__list{
+  background-color: $blue-button;
 }
 
 .mobile-menu__item{
   height: 55px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,6 +34,7 @@
   
   &:hover{
     background-color: $blue-button_hover;
+    transition: 0.3s;
   }
 
   &:first-child{
@@ -39,7 +49,17 @@
 
 .mobile-menu__link{
   display: block;
-  color: #fff;
+  font-family: $pts_bold;
   font-size: 18px;
+  color: #fff;
   text-decoration: none;
+
+  &:active{
+    opacity: 0.3;
+    background-color: $blue-button_down;
+  }
+}
+
+.mobile-menu_show{
+  top: 0;
 }
