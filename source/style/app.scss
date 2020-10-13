@@ -1,8 +1,10 @@
 body {
   margin: 0;
+  text-transform: uppercase;
 }
 
 @import 'common/fonts';
 @import 'common/variables';
 @import 'common/mobile-menu';
 @import 'common/header';
+@import 'common/reasons';
