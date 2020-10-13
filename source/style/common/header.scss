@@ -4,6 +4,7 @@
   margin: 0 auto;
   box-shadow: 0 0 11px grey;
   transition: 1s ease;
+  overflow: hidden;
 }
 
 .container_margin-top{
@@ -12,7 +13,6 @@
 
 .header__wrap{
   position: relative;
-  overflow: hidden;
 
   &:after {
     content: '';
@@ -36,7 +36,7 @@
   position: absolute;
   content: '';
   width: 180%;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -82,9 +82,27 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover{
+    color: $blue-button;
+  }
+
   &:active{
     opacity: 0.3;
-    background-color: $blue-button_down;
+    color: $blue-button_down;
+  }
+}
+
+.top-menu__link_active{
+
+  color: $main-menu-active;
+
+  &:hover{
+    color: $main-menu-active_hover;
+  }
+  
+  &:active{
+    opacity: 0.3;
+    color: $main-menu-active;
   }
 }
 
