@@ -1,5 +1,6 @@
 (function() {
 
+	// открытие/закрытие меню на мобилах
 	(function() {
 
 		const mobileMenu = document.querySelector('.mobile-menu');
