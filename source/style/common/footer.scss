@@ -2,9 +2,20 @@
   padding: 40px 20px 20px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+
+  @media(min-width: 768px){
+    padding: 35px 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media(min-width: 1200px){
+    padding: 37px 120px;
+  }
 }
 
 .hashtag__link{
@@ -24,6 +35,10 @@
     opacity: 0.3;
     color: $blue-button_down;
   }
+
+  @media(min-width: 768px){
+    margin-bottom: 0;
+  }
 }
 
 .social__list{
@@ -32,6 +47,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+
+  @media(min-width: 768px){
+    margin-bottom: 0;
+  }
 }
 
 .social__item{
@@ -77,6 +96,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(min-width: 768px){
+    width: auto;
+  }
 }
 
 .designed__text{

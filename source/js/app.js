@@ -13,6 +13,7 @@
 			e.preventDefault();
 			mobileMenu.classList.add('mobile-menu_show');
 			container.classList.add('container_margin-top');
+			menuOpenLink.classList.add('hided');
 		});
 
 		menuCloseLink.addEventListener('click', (e) => {
@@ -20,6 +21,7 @@
 			e.preventDefault();
 			mobileMenu.classList.remove('mobile-menu_show');
 			container.classList.remove('container_margin-top');
+			menuOpenLink.classList.remove('hided');
 		});
 
 	})();
