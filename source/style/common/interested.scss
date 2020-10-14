@@ -1,0 +1,43 @@
+.interested{
+  padding: 33px 20px 50px;
+  text-align: center;
+}
+
+.interested__head{
+  font-family: $pts_bold;
+  font-size: 21px;
+  color: #000;
+  margin-bottom: 32px;
+}
+
+.interested__desc{
+  font-family: $pts;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-main;
+  margin-bottom: 41px;
+}
+
+.interested__btn{
+  height: 58px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $pts_bold;
+  font-size: 21px;
+  color: #fff;
+  background-color: $blue-button;
+  text-decoration: none;
+
+
+  &:hover{
+    background-color: $blue-button_hover;
+    transition: 0.3s;
+  }
+
+  &:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $blue-button_down;
+  }
+}
