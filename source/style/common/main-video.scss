@@ -1,0 +1,67 @@
+.video{
+  padding: 40px 0;
+}
+
+.video-header{
+  padding: 0 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 24px;
+}
+
+.video-header__name{
+  margin-bottom: 40px;
+  font-family: $pts_bold;
+  font-size: 18px;
+}
+
+.video-header__desc{
+  font-family: $pts;
+  font-size: 14px;
+}
+
+.player__window{
+  height: 200px;
+  background: url(../img/video-mobile.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.player__track{
+  height: 46px;
+  margin: -46px 20px 0;
+  background-color: $player-track;
+  opacity: 0.6;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 235px;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0.2;
+  }
+
+  &:after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: calc(22px + 10%);
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.player__control{
+  height: 68px;
+  margin: 0 20px;
+  background-color: $player-control;
+}

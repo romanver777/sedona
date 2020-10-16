@@ -1,10 +1,15 @@
 extends ../_template
 
 block variables
-    - var title = 'Фото и видео'
+    -
+        var title = 'Фото и видео'
+        var isIndexPage = false;
 
 block content
     include ../common/mobile-menu
-    include ../common/header
-    include ../common/main-photo
-    include ../common/footer
+    .container
+        include ../common/header
+        main
+            include ../common/main-photo
+            include ../common/main-video
+        include ../common/footer

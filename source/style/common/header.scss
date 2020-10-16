@@ -150,6 +150,9 @@
     }
   }
 }
+.header_height{
+  height: 160px;
+}
 
 .text-index{
   background: url(../img/text-index.svg) center no-repeat;
@@ -160,4 +163,10 @@
     width: 460px;
     height: 350px;
   }
+}
+
+.text-index_sedona{
+  background: url(../img/text-index_sedona.svg) center no-repeat;
+  width: 229px;
+  height: 39px;
 }
