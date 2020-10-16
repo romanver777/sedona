@@ -11,6 +11,6 @@ header.header__wrap
             .top-menu__item
                 a(href='https://htmlacademy.ru').top-menu__link HTML ACADEMY
         a(href='').menu__btn.menu__btn_gamburger
-    .header
-        .text-index
+    .header(class=isIndexPage ? null : 'header_height')
+        .text-index(class=isIndexPage ? null : 'text-index_sedona')
     img(alt='стрела' src='./assets/img/arrow-down.svg').arrow-down
