@@ -1,11 +1,25 @@
+.photo__main{
+
+}
 .photo{
+
+  @media(min-width: 768px){
+    margin: 0 60px;
+  }
+
+  @media(min-width: 1200px){
+    margin: 0;
+  }
 }
 
 .photo-header{
   padding: 44px 20px 35px;
   text-align: center;
-  border-bottom: 1px solid $border-gray;
   text-transform: uppercase;
+
+  @media(min-width: 768px){
+    padding: 75px 20px;
+  }
 }
 
 .photo-header__name{
@@ -13,17 +27,31 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 37px;
+
+  @media(min-width: 768px){
+    font-size: 30px;
+  }
 }
 
 .photo-header__desc{
   font-family: $pts;
   font-size: 14px;
   line-height: 24px;
+  max-width: 435px;
+
+  @media(min-width: 768px){
+    margin: 0 auto;
+  }
 }
 
 .photo__list{
   margin: 0;
   padding: 0;
+  border-top: 1px solid $border-gray;
+
+  @media(min-width: 768px){
+    border: 0;
+  }
 }
 
 .photo__item{
@@ -32,18 +60,74 @@
   line-height: 24px;
   padding: 22px 20px;
   border-bottom: 1px solid $border-gray;
+
+  @media(min-width: 768px){
+    padding: 0;
+    background-color: $player-control;
+    border: 0;
+  }
+}
+
+.photo__item_wrap{
+
+  @media(min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+.photo__item_width{
+
+  @media(min-width: 768px) {
+    width: 50%;
+  }
+
+  .photo-img__wrap {
+
+    @media(min-width: 768px) {
+      height: 270px;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    width: calc( 100% / 3);
+  }
+
 }
 
 .photo-img__wrap{
   height: 280px;
   margin-bottom: 22px;
   overflow: hidden;
+
+  @media(min-width: 768px){
+    height: 402px;
+    margin-bottom: 0;
+  }
 }
 
 .photo__img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.photo__txt{
+
+  @media(min-width: 768px) {
+    padding: 22px 20px;
+    position: relative;
+  }
+
+  @media(min-width: 1200px) {
+    height: 80px;
+    box-sizing: border-box;
+    margin-top: -80px;
+    padding: 12px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
 }
 
 .photo__title{
@@ -55,10 +139,24 @@
 .photo__author{
   margin-bottom: 18px;
   display: inline-block;
+
+  @media(min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .photo__name{
   display: inline-block;
+}
+
+.photo__like-wrap{
+
+  @media(min-width: 768px) {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .photo__like{
