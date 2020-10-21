@@ -2,12 +2,12 @@ header.header__wrap
     .top-menu
         .top-menu__list
             .top-menu__item
-                a(href='./index.html').top-menu__link.top-menu__link_active Главная
+                a(href='./index.html' class=(pageName == 'index') ? 'top-menu__link_active' : null).top-menu__link Главная
             .top-menu__item
-                a(href='./photo.html').top-menu__link Фото и видео
+                a(href='./photo.html' class=(pageName == 'photo') ? 'top-menu__link_active' : null).top-menu__link Фото и видео
             .top-menu__item
             .top-menu__item
-                a(href='./form.html').top-menu__link Форма отзыва
+                a(href='./form.html' class=(pageName == 'form') ? 'top-menu__link_active' : null).top-menu__link Форма отзыва
             .top-menu__item
                 a(href='https://htmlacademy.ru').top-menu__link HTML ACADEMY
         a(href='').menu__btn.menu__btn_gamburger
