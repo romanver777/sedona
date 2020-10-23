@@ -1,10 +1,14 @@
 extends ../_template
 
 block variables
-    - var title = 'Форма отзыва'
+    -
+        var title = 'Форма отзыва'
+        var isIndexPage = false
+        var pageName = 'form'
 
 block content
     include ../common/mobile-menu
-    include ../common/header
-    include ../common/main-form
-    include ../common/footer
+    .container
+        include ../common/header
+        include ../common/main-form
+        include ../common/footer
