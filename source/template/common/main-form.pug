@@ -28,33 +28,33 @@ main.main-form
                     .input-contact.input-contact_email
                         input(placeholder='Введите e-mail').form-input.form-input__email
         .form__item
-            .form__common-title.form-impression__name Представьтесь:
+            .form__common-title.form-impression__name Ваше общее впечатление:
             .form-impression__list
                 .form-impression__item
-                    input(type='radio').form-input__radio
-                    .form__name Скорее положительное
+                    input(type='radio' id="radio1" name="radio").form-input__radio
+                    label(for="radio1").form-impression__label.form__name Скорее положительное
                 .form-impression__item
-                    input(type='radio').form-input__radio
-                    .form__name Скорее отрицательное
+                    input(type='radio' id="radio2" name="radio").form-input__radio
+                    label(for="radio2").form-impression__label.form__name Скорее отрицательное
                 .form-impression__item
-                    input(type='radio').form-input__radio
-                    .form__name Затрудняюсь ответить
+                    input(type='radio' id="radio3" name="radio").form-input__radio
+                    label(for="radio3").form-impression__label.form__name Затрудняюсь ответить
         .form__item
-            .form__common-title.form-landmark__name Представьтесь:
+            .form__common-title.form-landmark__name Посещенные достопримечательности:
             .form-landmark__list
                 .form-landmark__item
-                    input(type='checkbox').form-input__checkbox
-                    .form__name  Мост Дьявола
+                    input(type='checkbox' id="checkbox1").form-input__checkbox
+                    label(for="checkbox1").form-landmark__label.form__name  Мост Дьявола
                 .form-landmark__item
-                    input(type='checkbox').form-input__checkbox
-                    .form__name Гора-Колокол
+                    input(type='checkbox' id="checkbox2").form-input__checkbox
+                    label(for="checkbox2").form-landmark__label.form__name Гора-Колокол
                 .form-landmark__item
-                    input(type='checkbox').form-input__checkbox
-                    .form__name Слайд-парк
+                    input(type='checkbox' id="checkbox3").form-input__checkbox
+                    label(for="checkbox3").form-landmark__label.form__name Слайд-парк
                 .form-landmark__item
-                    input(type='checkbox').form-input__checkbox
-                    .form__name Красные скалы
-    section.feedback
-        .emotions__name.form__common-title Опишите свои эмоции
-        textarea(placeholder='Опишите подробно все свои восторги')
-        button.emotions__btn Отправить отзыв
+                    input(type='checkbox' id="checkbox4").form-input__checkbox
+                    label(for="checkbox4").form-landmark__label.form__name Красные скалы
+        .form__item
+            .emotions__name.form__common-title Опишите свои эмоции
+            textarea(placeholder='Опишите подробно все свои восторги').form__textarea
+            button(type="submit").emotions__btn Отправить отзыв

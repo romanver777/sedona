@@ -13,15 +13,12 @@
 .form__item{
   border-top: 1px solid $border-gray;
   padding: 25px 20px;
-
-  &:last-child{
-    border-bottom: 1px solid $border-gray;
-  }
 }
 
 .form__common-title{
   font-family: $pts_bold;
   font-size: 18px;
+  line-height: 26px;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -119,4 +116,117 @@
 
 .form__email{
   margin: 0 0 16px 22px;
+}
+
+.form-impression__item{
+  height: 56px;
+  margin-bottom: 13px;
+}
+
+.form-input__radio{
+  display: none;
+}
+
+.form-impression__label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-family: $pts_bold;
+  font-size: 18px;
+  text-transform: initial;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 17px solid $player-control;
+    border-radius: 50%;
+    background-color: $player-control;
+    margin-right: 23px;
+    transition: 0.3s;
+  }
+}
+
+.form-input__radio:checked + .form-impression__label:before {
+  background-color: #000;
+}
+
+.form-landmark__item{
+  height: 56px;
+  margin-bottom: 24px;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.form-input__checkbox{
+  display: none;
+}
+
+.form-landmark__label{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  font-family: $pts_bold;
+  font-size: 18px;
+  text-transform: initial;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $player-control;
+    margin-right: 23px;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    background: url(../img/icon-tick.svg) center no-repeat;
+    width: 24px;
+    height: 16px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+.form-input__checkbox:checked + .form-landmark__label:after {
+  opacity: 1;
+}
+
+.form__textarea{
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box;
+  border: none;
+  background-color: $player-control;
+  padding: 22px 20px;
+  margin-bottom: 50px;
+  font-family: $pts_bold;
+  font-size: 18px;
+  line-height: 26px;
+  resize: none;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+button{
+  border: none;
+}
+
+.emotions__btn{
+  @extend .interested__btn;
+  text-transform: uppercase;
 }
