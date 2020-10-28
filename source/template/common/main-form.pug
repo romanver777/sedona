@@ -4,7 +4,7 @@ main.main-form
             .review-header__name Оставьте свой отзыв
             .review-header__desc Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
     form.form__list
-        .form__item
+        .form__item.form-introduce
             .form__common-title.form-introduce__name Представьтесь:
             .form-introduce__list
                 .form-introduce__item
@@ -16,8 +16,8 @@ main.main-form
                 .form-introduce__item
                     .form__common-name.form__mname Отчество:
                     input(placeholder='Александрович').form-input.form-input__mname
-        .form__item
-            .form__common-title.form-contact__name Контактная информация:
+        .form__item.form-contact
+            .form__common-title.form-contact__name.form__common-title_transform Контактная информация:
             .form-contact__list
                 .form-contact__item
                     .form__common-name.form__tel Контактный телефон*:
@@ -27,11 +27,11 @@ main.main-form
                     .form__common-name.form__email Электронная почта*:
                     .input-contact.input-contact_email
                         input(placeholder='Введите e-mail').form-input.form-input__email
-        .form__item
+        .form__item.form-impression
             .form__common-title.form-impression__name Ваше общее впечатление:
             .form-impression__list
                 .form-impression__item
-                    input(type='radio' id="radio1" name="radio").form-input__radio
+                    input(type='radio' id="radio1" name="radio" checked).form-input__radio
                     label(for="radio1").form-impression__label.form__name Скорее положительное
                 .form-impression__item
                     input(type='radio' id="radio2" name="radio").form-input__radio
@@ -39,8 +39,8 @@ main.main-form
                 .form-impression__item
                     input(type='radio' id="radio3" name="radio").form-input__radio
                     label(for="radio3").form-impression__label.form__name Затрудняюсь ответить
-        .form__item
-            .form__common-title.form-landmark__name Посещенные достопримечательности:
+        .form__item.form-landmark
+            .form__common-title.form-landmark__name.form__common-title_transform Посещенные достопримечательности:
             .form-landmark__list
                 .form-landmark__item
                     input(type='checkbox' id="checkbox1").form-input__checkbox
@@ -54,7 +54,9 @@ main.main-form
                 .form-landmark__item
                     input(type='checkbox' id="checkbox4").form-input__checkbox
                     label(for="checkbox4").form-landmark__label.form__name Красные скалы
-        .form__item
-            .emotions__name.form__common-title Опишите свои эмоции
+        .form__item.form__emotions
+            .emotions__name.form__common-title.form__common-title_transform Опишите свои эмоции
             textarea(placeholder='Опишите подробно все свои восторги').form__textarea
-            button(type="submit").emotions__btn Отправить отзыв
+            .btn-wrap
+                button(type="submit").emotions__btn Отправить отзыв
+                .form__note * &mdash; Обязательные поля
