@@ -9,24 +9,26 @@ main.main-form
             .form-introduce__list
                 .form-introduce__item
                     .form__common-name.form__fname Имя*:
-                    input(placeholder='Петр').form-input.form-input__fname
+                    input(maxlength='15' placeholder='Петр').form-input.form-input__fname
                 .form-introduce__item
                     .form__common-name.form__lname Фамилия*:
-                    input(placeholder='Иванов').form-input.form-input__lname
+                    input(maxlength='20' placeholder='Иванов').form-input.form-input__lname
                 .form-introduce__item
                     .form__common-name.form__mname Отчество:
-                    input(placeholder='Александрович').form-input.form-input__mname
+                    input(maxlength='15' placeholder='Александрович').form-input.form-input__mname
         .form__item.form-contact
             .form__common-title.form-contact__name.form__common-title_transform Контактная информация:
             .form-contact__list
                 .form-contact__item
-                    .form__common-name.form__tel Контактный телефон*:
+                    .form__common-name.form__tel
+                        span.form__tel_word Контактный
+                        span  телефон*:
                     .input-contact.input-contact_tel
-                        input(placeholder='Введите телефон').form-input.form-input__tel
+                        input(maxlength='11' placeholder='Введите телефон').form-input.form-input__tel
                 .form-contact__item
                     .form__common-name.form__email Электронная почта*:
                     .input-contact.input-contact_email
-                        input(placeholder='Введите e-mail').form-input.form-input__email
+                        input(maxlength='25' placeholder='Введите e-mail').form-input.form-input__email
         .form__item.form-impression
             .form__common-title.form-impression__name Ваше общее впечатление:
             .form-impression__list
@@ -56,7 +58,7 @@ main.main-form
                     label(for="checkbox4").form-landmark__label.form__name Красные скалы
         .form__item.form__emotions
             .emotions__name.form__common-title.form__common-title_transform Опишите свои эмоции
-            textarea(placeholder='Опишите подробно все свои восторги').form__textarea
+            textarea(maxlength='400' placeholder='Опишите подробно все свои восторги').form__textarea
             .btn-wrap
                 button(type="submit").emotions__btn Отправить отзыв
                 .form__note * &mdash; Обязательные поля
